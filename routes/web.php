@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('login', 'Auth_oath\LoginController@index');
+
+
+Route::get('register', 'Auth_oath\RegisterController@index');
+Route::post('register_process', 'Auth_oath\RegisterController@register_process');
+
+
+
